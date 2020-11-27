@@ -4,6 +4,7 @@ Dotfiles repository
 
 ## Shorcuts
 
+- `Tab` + `,` Trigger enmmet
 - `jk` to normal mode
 - `<Leader>` = `Space`
 - `<Leader>` + `t` + `c` Create a new tab
@@ -24,7 +25,7 @@ Dotfiles repository
 - `Ctrl` + `k` Go to top screen
 - `Ctrl` + `l` Go to right screen
 - `Ctrl` + `b` Toggle the explorer
-- `Ctrl` + `m` Open NERDTree menu
+- `<Leader>` + `m` Open NERDTree menu
 
 ## Preview
 
@@ -51,4 +52,3 @@ Dotfiles repository
 #### `Ctrl` + `Shift` + `f`
 
 ![Find in file!](./assets/images/searchInFile.png)
-
