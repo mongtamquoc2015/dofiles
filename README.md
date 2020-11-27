@@ -24,22 +24,31 @@ Dotfiles repository
 - `Ctrl` + `k` Go to top screen
 - `Ctrl` + `l` Go to right screen
 - `Ctrl` + `b` Toggle the explorer
-- `m` 
+- `Ctrl` + `m` Open NERDTree menu
 
 ## Preview
 
 ### Explorer
+
 #### `Ctrl` + `b`
+
 ![Home!](./assets/images/home.png)
 
 ### Terminal
+
 #### `Ctrl` + `t`
+
 ![Terminal!](./assets/images/terminal.png)
 
 ### Go to file
+
 #### `Ctrl` + `p`
+
 ![Go to file!](./assets/images/goToFile.png)
 
 ### Find in file
+
 #### `Ctrl` + `Shift` + `f`
+
 ![Find in file!](./assets/images/searchInFile.png)
+
