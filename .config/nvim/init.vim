@@ -1,4 +1,8 @@
 call plug#begin()
+Plug 'mattn/emmet-vim'
+Plug 'plasticboy/vim-markdown'
+Plug 'StanAngeloff/php.vim'
+Plug 'jwalton512/vim-blade'
 Plug 'tpope/vim-fugitive'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'huytd/vim-quickrun'
@@ -26,12 +30,10 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
 Plug 't9md/vim-choosewin'
 Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
-Plug 'kaicataldo/material.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'atelierbram/Base2Tone-vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'tyrannicaltoucan/vim-quantum'
-Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'severin-lemaignan/vim-minimap'
 call plug#end()
@@ -75,6 +77,11 @@ set ignorecase
 set relativenumber
 
 
+"Enmet
+let g:user_emmet_leader_key='<,>'
+" Blade
+let g:blade_custom_directives = ['datetime', 'javascript']
+
 " Vim color highlighting
 let g:Hexokinase_highlighters = ['virtual']
 let g:Hexokinase_virtualText = '▩'
@@ -100,7 +107,7 @@ call esearch#out#win#map('<Enter>', 'tab')
 
 " JS config
 let g:javascript_plugin_jsdoc = 1
-let g:polyglot_disabled = ['jsx', 'tsx', 'js', 'ts']
+"let g:polyglot_disabled = ['jsx', 'tsx', 'js', 'ts']
 let g:vim_jsx_pretty_template_tags = ['html', 'jsx', 'tsx']
 
 " Custom icon for coc.nvim statusline
@@ -237,7 +244,7 @@ nnoremap <Leader>ss :mksession! .vimsession<CR>
 nnoremap <Leader>sr :so .vimsession<CR>
 nnoremap <Leader><Leader>r :so ~/.config/nvim/init.vim<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
-let NERDTreeMapMenu='<C-m>'
+let NERDTreeMapMenu='<Leader>m'
 nnoremap <Leader>f :NERDTreeFind<CR>
 "Buffer
 nnoremap <Leader>tn :tabn<CR>
