@@ -1,4 +1,5 @@
 call plug#begin()
+Plug 'jparise/vim-graphql'
 Plug 'mattn/emmet-vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'StanAngeloff/php.vim'
