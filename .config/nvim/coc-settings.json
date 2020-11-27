@@ -43,5 +43,11 @@
     "jsonc",
     "scss",
     "sass"
+  ],
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": [
+    "javascript",
+    "typescript",
+    "javascriptreact"
   ]
 }
