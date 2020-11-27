@@ -32,5 +32,18 @@
     "default": "\uf29c"
   },
   "typescript.showUnused": true,
-  "javascript.showUnused": true
+  "javascript.showUnused": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "html",
+    "markdown",
+    "javascript",
+    "typescript",
+    "json",
+    "jsonc",
+    "php",
+    "java",
+    "sass",
+    "scss"
+  ]
 }
