@@ -237,6 +237,7 @@ nnoremap <Leader>ss :mksession! .vimsession<CR>
 nnoremap <Leader>sr :so .vimsession<CR>
 nnoremap <Leader><Leader>r :so ~/.config/nvim/init.vim<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
+let NERDTreeMapMenu='<Leader>m'
 nnoremap <Leader>f :NERDTreeFind<CR>
 "Buffer
 nnoremap <Leader>tn :tabn<CR>
