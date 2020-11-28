@@ -1,4 +1,5 @@
 call plug#begin()
+Plug 'luochen1990/rainbow'
 Plug 'jparise/vim-graphql'
 Plug 'mattn/emmet-vim'
 Plug 'plasticboy/vim-markdown'
@@ -50,7 +51,6 @@ autocmd BufWritePre * %s/\s\+$//e
 "Format json
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
-"Theme
 colorscheme dracula
 
 set encoding=UTF-8
@@ -77,9 +77,14 @@ set termguicolors
 set ignorecase
 set relativenumber
 
+"Rainbow
+let g:rainbow_active = 1
 
 "Enmet
-let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_leader_key='<C-z>'
+"let g:user_emmet_install_global = 0
+"autocmd FileType html,css,js,tsx,ts,jsx EmmetInstall
+
 " Blade
 let g:blade_custom_directives = ['datetime', 'javascript']
 

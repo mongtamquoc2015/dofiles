@@ -117,8 +117,15 @@ source $ZSH/oh-my-zsh.sh
 # Config
 alias zshconf="nvim ~/.zshrc"
 alias nvimconf="nvim ~/.config/nvim/init.vim"
+alias readmeconf="nvim ~/README.md"
 
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+# Git bare for dotfile
+alias conf='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias confs="conf status"
+alias confa="conf add"
+alias confc="conf commit -m"
+alias confp="conf push -u origin"
+alias confpu="conf pull"
 
 # Tmux
 alias ide="tmux split-window -v -p 30"

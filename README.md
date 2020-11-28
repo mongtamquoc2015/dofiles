@@ -4,8 +4,8 @@ Dotfiles repository
 
 ## Shorcuts
 
-- `Tab` + `,` Trigger enmmet
-- `jk` to normal mode
+- `<Leader>` + `,` Trigger enmmet
+- `jk` Normal mode
 - `<Leader>` = `Space`
 - `<Leader>` + `t` + `c` Create a new tab
 - `<Leader>` + `t` + `x` Close a tab
