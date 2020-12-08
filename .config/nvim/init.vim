@@ -1,4 +1,6 @@
 call plug#begin()
+"Plug 'honza/vim-snippets'
+"Plug 'SirVer/ultisnips'
 Plug 'luochen1990/rainbow'
 Plug 'jparise/vim-graphql'
 Plug 'mattn/emmet-vim'
@@ -284,6 +286,7 @@ let g:choosewin_overlay_enable = 1
 
 " NERDTree config
 let NERDTreeMinimalUI=1
+autocmd vimenter * NERDTree
 
 " Turn off whitespaces compare and folding in vimdiff
 set splitright

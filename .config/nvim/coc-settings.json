@@ -33,7 +33,7 @@
   },
   "typescript.showUnused": true,
   "javascript.showUnused": true,
-    "coc.preferences.formatOnSaveFiletypes": [
+  "coc.preferences.formatOnSaveFiletypes": [
     "html",
     "css",
     "markdown",
@@ -42,12 +42,9 @@
     "json",
     "jsonc",
     "scss",
-    "sass"
+    "sass",
+    "java"
   ],
   "eslint.autoFixOnSave": true,
-  "eslint.filetypes": [
-    "javascript",
-    "typescript",
-    "javascriptreact"
-  ]
+  "eslint.filetypes": ["javascript", "typescript", "javascriptreact"]
 }

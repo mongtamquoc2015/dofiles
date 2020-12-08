@@ -5,6 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Diable .env prompt
+ZSH_DOTENV_PROMPT=false
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -118,6 +121,11 @@ source $ZSH/oh-my-zsh.sh
 alias zshconf="nvim ~/.zshrc"
 alias nvimconf="nvim ~/.config/nvim/init.vim"
 alias readmeconf="nvim ~/README.md"
+alias vim="nvim"
+
+# CD
+alias downloads="cd ~/Downloads"
+alias docs="cd ~/Documents"
 
 # Git bare for dotfile
 alias conf='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
@@ -146,3 +154,7 @@ fi
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
+
+ZSH_DOTENV_PROMPT=false
